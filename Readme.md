@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Сергей Петров](https://up.htmlacademy.ru/htmlcss/23/user/401977).
-* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker)
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker) 
 
 ---
 
