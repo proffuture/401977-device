@@ -5,8 +5,92 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/index-logo.svg" width="100" height="50" alt="Логотип девайс"/>
+        </a>
+        <form class="search">
+          <!--Тут будет строка поиска по сайту-->
+        </form>
+        <ul class="user-navigation">
+          <li class="login-link"><a href="#">Войти</a></li>
+        </ul>
+        <p><a href="#" class="compare">Сравнить</a></p>
+        <p><a href="#" class="cart">Корзина</a></p>
+        <ul class="site-navigation">
+          <li><a href="#">КАТАЛОГТОВАРОВ</a>
+            <ul class="inner-list">
+              <li class="inner-list-items"><a href="#">Виртуальная реальность</a></li>
+              <li class="inner-list-items"><a href="#">Моноподы для селфи</a></li>
+              <li class="inner-list-items"><a href="#">Экшн-камеры</a></li>
+              <li class="inner-list-items"><a href="#">Фитнес-браслеты</a></li>
+              <li class="inner-list-items"><a href="#">Умные часы</a></li>
+              <li class="inner-list-items"><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+          <li><a href="#">ДОСТАВКА</a></li>
+          <li><a href="#">ГАРАНТИЯ</a></li>
+          <li><a href="#">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
+      <section class="info">
+        <div class="info-about-us">
+          <h2 class="about-us-h2">О нас</h2>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика,<br>
+             который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки<br>
+             России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul class="transport-company">
+            <li class="transport-company-items">Деловые Линии</li>
+            <li class="transport-company-items">Автотрейдинг</li>
+            <li class="transport-company-items">ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="#" class="button">ПОДРОБНЕЕ О НАС</a>
+        </div>
+        <div class="info-contacts">
+          <h2 class="info-contacts-h2">Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
+             проверить работоспособность покупки. Всякое бывает.</p>
+             <a href="#"><img src="img/map.jpg" width="560" height="222" alt="карта проезда"/></a>
+             <a href="#" class="button">НАПИШИТЕ НАМ</a>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <a href="#"><img src="img/index-logo-2.svg" width="100" height="50" alt="Логотип девайс"/></a>
+      <ul class="user-navigation">
+        <li class="login-link-footer"><a href="#">Войти</a></li>
+      </ul>
+      <p><a href="#" class="compare-footer">Сравнить</a></p>
+      <p><a href="#" class="cart-footer">Корзина</a></p>
+      <ul class="site-navigation-footer">
+        <li class="site-navigation-footer-items"><a href="#">ДОСТАВКА</a></li>
+        <li class="site-navigation-footer-items"><a href="#">ГАРАНТИЯ</a></li>
+        <li class="site-navigation-footer-items"><a href="#">КОНТАКТЫ</a></li>
+      </ul>
+      <p class="address">г. Москва, ул. Строителей, 15</p>
+      <p class="phone">Тел.: +7 (495) 495-95-95</p>
+      <ul>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Инстаграм</a></li>
+        <li><a class="social-button" href="#">Твиттер</a></li>
+      </ul>
+      <a href="#"><img src="img/logo-htmlacademy.svg" width="30" height="40" alt="Логотип htmlacademy"/></a>
+    </footer>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <section class="modal modal-window">
+      <h2 class="visually-hidden">Форма отправки</h2>
+      <!-- Здесь будет форма -->
+      <span class="modal-close">x</span>
+    </section>
 
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <span class="modal-close">x</span>
+    </section>
   </body>
 </html>
