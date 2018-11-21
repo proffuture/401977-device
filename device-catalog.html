@@ -44,17 +44,96 @@
         <li>Моноподы для селфи</li>
       </ul>
 
-      <section class="main-catalog">
-        <div class="main-filter">
-          <h2 class="filter-h2">Фильтр:</h2>
-          <div>
-
-          </div>
-        </div>
-        <div class="main-sorting">
-          <h2 class="sorting-h2">Фильтр:</h2>
-        </div>
-      </section>
+      <section class="main-catalog"><!--Секция каталога начало-->
+        <div class="warp-filter"><!--Обертка фильтра начало-->
+          <div class="filter"><!--Фильтр начало-->
+            <h2 class="filter-h2">Фильтр:</h2>
+            <fieldset>
+              <legend>
+                Стоимость
+              </legend>
+              <!--Здесь будест ползунок для цены-->
+            </fieldset>
+            <fieldset>
+              <legend>
+                <p>Цвет</p>
+              </legend>
+              <input type="checkbox" name="color"> Черный
+              <input type="checkbox" name="color"> Белый
+              <input type="checkbox" name="color"> Синий
+              <input type="checkbox" name="color"> Красный
+              <input type="checkbox" name="color"> Розовый
+            </fieldset>
+            <fieldset>
+              <legend>
+                Bluetooth
+              </legend>
+              <input type="radio" name="yas" checked> Есть
+              <input type="radio" name="no"> Нет
+            </fieldset>
+            <button class="button" type="submit">Показать</button>
+          </div><!--Фильтр конец-->
+        </div><!--Обертка фильтра конец-->
+        <div class="warp-sorting"><!--Обертка сортировки начало-->
+          <div class="sorting"><!--Сортировка начало-->
+            <h2 class="sorting-h2">Сортировка:</h2>
+            <ul class="sorting-menu">
+              <li class="sorting-menu-current"><p>По цене</p></li>
+              <li><p>По типу</p></li>
+              <li><p>По популярности</p></li>
+            </ul>
+            <ul class="expand">
+              <li class="close-expand">-</li>
+              <li class="open-expand">+</li>
+            </ul>
+            <ul class="catalog-list">
+              <li class="catalog-item">
+                <img src="img/foto-1" width="150" height="250" alt="Товар номер 1">
+                <button class="button">В корзину</button>
+                <button class="button">Добавить к сравнению</button>
+                <h3>
+                  <a href="#">Любительская селфи-палка</a>
+                  <span class="price">500 руб.</span>
+                </h3>
+              </li>
+              <li class="catalog-item">
+                <img src="img/foto-2" width="150" height="250" alt="Товар номер 2">
+                <button class="button">В корзину</button>
+                <button class="button">Добавить к сравнению</button>
+                <h3>
+                  <a href="#">Профессиональная селфи-палка </a>
+                  <span class="price">1500 руб.</span>
+                </h3>
+              </li>
+              <li class="catalog-item">
+                <img src="img/foto-3" width="150" height="250" alt="Товар номер 3">
+                <button class="button">В корзину</button>
+                <button class="button">Добавить к сравнению</button>
+                <h3>
+                  <a href="#">Непотопляемая селфи-палка</a>
+                  <span class="price">2500 руб.</span>
+                </h3>
+              </li>
+              <li class="catalog-item">
+                <img src="img/foto-4" width="150" height="250" alt="Товар номер 4">
+                <button class="button">В корзину</button>
+                <button class="button">Добавить к сравнению</button>
+                <h3>
+                  <a href="#">Селфи-палка «Следуй за мной»</a>
+                  <span class="price">4900 руб.</span>
+                </h3>
+              </li>
+            </ul>
+            <a class="control-page-back">Назад</a>
+            <ul class="number-list">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+            <a class="control-page-front">Вперёд</a>
+          </div><!--Сортировка конец-->
+        </div><!--Обертка сортировки конец-->
+      </section><!--Секция каталога конец-->
 
     </main><!--Основной контент конец-->
 
