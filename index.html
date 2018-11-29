@@ -9,16 +9,17 @@
     <header class="main-header"><!--Шапка сайта начало-->
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/logo.svg" width="163.281" height="34.938" alt="Логотип девайс">
+          <img src="img/logo.svg" width="163" height="35" alt="Логотип девайс">
         </a>
-        <form class="search" action="#">
-           <!--Тут будет строка поиска по сайту-->
+        <form class="search" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search-on-site">Поиск</label>
+           <input type="search" name="search" placeholder="Поиск по сайту" id="search-on-site">
         </form>
-        <a class="login-link" href="#">Войти</a>
-        <a class="compare" href="#">Сравнить</a>
-        <a class="cart" href="#">Корзина</a>
+        <a class="login-link" href="login.html">Войти</a>
+        <a class="compare" href="compare.html">Сравнить</a>
+        <a class="cart" href="cart.html">Корзина</a>
         <ul class="site-navigation">
-          <li><a href="#">Каталог товаров</a>
+          <li><a href="device-catalog.html">Каталог товаров</a>
             <ul class="inner-list">
               <li class="inner-list-items"><a href="#">Виртуальная реальность</a></li>
               <li class="inner-list-items"><a href="#">Моноподы для селфи</a></li>
@@ -28,9 +29,9 @@
               <li class="inner-list-items"><a href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="warranty.html">Гарантия</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </header><!--Шапка сайта конец-->
@@ -47,7 +48,7 @@
           <p>Самая длинная палка для селфи доступна в нашем магазине.
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <a class="button" href="#">Подробнее</a>
-          <input type="radio" checked>
+          <input type="radio" name="radio" checked>
           <table>
             <caption class="visually-hidden">Таблица характеристик товара</caption>
               <thead>
@@ -72,8 +73,8 @@
           <h3>Худеем<br> правильно!</h3>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
             не пропускать занятия и соблюдать диету.</p>
-          <button class="button">Подробнее</button>
-            <input type="radio">
+          <a class="button" href="#">Подробнее</a>
+            <input type="radio" name="radio">
           <table>
           <caption class="visually-hidden">Таблица характеристик товара</caption>
             <thead>
@@ -94,8 +95,8 @@
           <h3>Порхает как бабочка,<br> жалит как пчела!</h3>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
              мощным лазером, замаскированным под стандартную камеру.</p>
-          <button class="button">Подробнее</button>
-            <input type="radio">
+          <a class="button" href="#">Подробнее</a>
+            <input type="radio" name="radio">
           <table>
           <caption class="visually-hidden">Таблица характеристик товара</caption>
             <thead>
@@ -192,35 +193,43 @@
     </main><!--Основной контент конец-->
 
     <footer class="main-footer"><!--Подвал сайта начало-->
-      <a href="#"><img src="img/logo-yellow.svg" width="162.187" height="34.93" alt="Логотип девайс"></a>
-      <a class="login-link-footer" href="#">Войти</a>
-      <a class="compare-footer" href="#">Сравнить</a>
-      <a class="cart-footer" href="#">Корзина</a>
+      <img src="img/logo-yellow.svg" width="162.187" height="34.93" alt="Логотип девайс">
+      <a class="login-link-footer" href="login.html">Войти</a>
+      <a class="compare-footer" href="compare.html">Сравнить</a>
+      <a class="cart-footer" href="cart.html">Корзина</a>
       <p class="address">г. Москва, ул. Строителей, 15</p>
       <ul class="site-navigation-footer">
-        <li class="site-navigation-footer-items"><a href="#">Доставка</a></li>
-        <li class="site-navigation-footer-items"><a href="#">Гарантия</a></li>
-        <li class="site-navigation-footer-items"><a href="#">Контакты</a></li>
+        <li class="site-navigation-footer-items"><a href="delivery.html">Доставка</a></li>
+        <li class="site-navigation-footer-items"><a href="warranty.html">Гарантия</a></li>
+        <li class="site-navigation-footer-items"><a href="contacts.html">Контакты</a></li>
       </ul>
       <p class="phone">Тел.: +7 (495) 495-95-95</p>
       <ul class="social">
-        <li><a class="social-button facebook" href="#">Фейсбук</a></li>
-        <li><a class="social-button instagram" href="#">Инстаграм</a></li>
-        <li><a class="social-button twitter" href="#">Твиттер</a></li>
+        <li><a class="social-button facebook" href="https://www.facebook.com">Фейсбук</a></li>
+        <li><a class="social-button instagram" href="https://www.instagram.com">Инстаграм</a></li>
+        <li><a class="social-button twitter" href="https://twitter.com">Твиттер</a></li>
       </ul>
-      <a href="#" target="_blank"><img src="img/logo-html.svg" width="26.943" height="34.09" alt="Логотип htmlacademy"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-html.svg" width="26.943" height="34.09" alt="Логотип htmlacademy"></a>
     </footer><!--Подвал сайта конец-->
 
     <section class="modal modal-window"><!--Модалка отправки начало-->
       <h2 class="visually-hidden">Форма отправки</h2>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+      <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+        <label for="appointment-user-name">Ваше имя:</label>
+          <input type="text" name="name" id="appointment-user-name" value="" placeholder="Имя Фамилия">
+          <label for="appointment-user-email">Ваш email:</label>
+          <input type="email" name="email" id="appointment-user-email" value="" placeholder="email@example.com">
+          <label for="appointment-user-text">Текст письма:</label>
+          <textarea rows="5" cols="50" placeholder="В свободной форме" id="appointment-user-text"></textarea>
+          <button type="button" class="modal-close">Закрыть</button>
+          <button class="button" type="submit">Отправить</button>
+      </form>
     </section><!--Модалка отправки конец-->
 
     <section class="modal modal-map"><!--Модалка карты начало-->
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <a href="#"><img src="img/map-big.jpg" width="994" height="593" alt="карта проезда"></a>
-      <span class="modal-close">x</span>
+      <a href="https://yandex.ru/maps"><img src="img/map-big.jpg" width="994" height="593" alt="карта проезда"></a>
+      <button type="button" class="modal-close">Закрыть</button>
     </section><!--Модалка карты конец-->
   </body>
 </html>
