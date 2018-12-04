@@ -4,17 +4,13 @@ body {
  font-size: 15px;
 }
 
-body a {
+ a {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
 
 ul {
   list-style: none;
-}
-
-li a {
-  color: rgb(0, 0, 0);
 }
 
 .search {
