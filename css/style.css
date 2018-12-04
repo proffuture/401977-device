@@ -1,5 +1,5 @@
 body {
- font-family: "OpenSans", "Arial", sans-serif;
+ font-family: "Open Sans", "Arial", sans-serif;
  color: black;
  font-size: 15px;
 }
@@ -156,70 +156,6 @@ dt {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-}
-
-.popular-bg-1,
-.popular-bg-2,
-.popular-bg-3,
-.popular-bg-4,
-.popular-bg-5,
-.popular-bg-6 {
-  outline: 1px solid red;
-  width: 160px;
-  height: 160px;
-  background-color: #F8E296;
-}
-
-.popular-bg-1:hover,
-.popular-bg-2:hover,
-.popular-bg-3:hover,
-.popular-bg-4:hover,
-.popular-bg-5:hover,
-.popular-bg-6:hover {
-  background-color: #F1C52E;
-}
-
-.popular-1:active {
-  background-image: url(../img/popular-1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-background-color: rgba(255, 0, 0, 0.5);
-}
-
-.popular-1 {
-  background-image: url(../img/popular-1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.popular-bg-2 {
-  background-image: url(../img/popular-2.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.popular-bg-3 {
-  background-image: url(../img/popular-3.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.popular-bg-4 {
-  background-image: url(../img/popular-4.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.popular-bg-5 {
-  background-image: url(../img/popular-5.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.popular-bg-6 {
-  background-image: url(../img/popular-6.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .service {
