@@ -1,0 +1,292 @@
+body {
+ font-family: "OpenSans", "Arial", sans-serif;
+ color: black;
+ font-size: 15px;
+}
+
+body a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+li a {
+  color: rgba(0, 0, 0, 1);
+}
+
+.search {
+ font-size: 15px;
+  font-weight: lighter;
+  font-family: "OpenSans", sans-serif;
+}
+
+.main-navigation {
+  background-color: #F8E296;
+}
+
+.login-icon-link {
+  background-image: url(../img/user.svg);
+  background-repeat: no-repeat;
+}
+
+.login-icon-link:hover {
+  opacity: 0.6;
+}
+
+.login-icon-link:active {
+  opacity: 0.3;
+}
+
+.login-link {
+  padding-left: 20px;
+
+}
+
+.compare-icon {
+  background-image: url(../img/compare.svg);
+  background-repeat: no-repeat;
+}
+
+.compare {
+  padding-left: 20px;
+}
+
+.compare-icon:hover {
+  opacity: 0.6;
+}
+
+.compare-icon:active {
+  opacity: 0.3;
+}
+
+.cart-icon {
+  background: url(../img/cart.svg);
+  background-repeat: no-repeat;
+}
+
+.cart {
+  padding-left: 20px;
+}
+
+.cart-icon:hover {
+  opacity: 0.6;
+}
+
+.cart-icon:active {
+  opacity: 0.3;
+}
+
+.login-link, .compare, .cart { /* временно */
+  margin-left: 40px;
+}
+
+ .site-navigation {
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.device-catalog:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.device-catalog:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation .inner-list {
+  font-family: "OpenSans", sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: lighter;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.inner-list .inner-list-items:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.inner-list .inner-list-items:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  font-family: "Gilroy", sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+}
+
+table th {
+  font-family: "Gilroy", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: normal;
+}
+
+a.button {
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+dt {
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.product-category {
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.popular-bg-1,
+.popular-bg-2,
+.popular-bg-3,
+.popular-bg-4,
+.popular-bg-5,
+.popular-bg-6 {
+  outline: 1px solid red;
+  width: 160px;
+  height: 160px;
+  background-color: #F8E296;
+}
+
+.popular-bg-1:hover,
+.popular-bg-2:hover,
+.popular-bg-3:hover,
+.popular-bg-4:hover,
+.popular-bg-5:hover,
+.popular-bg-6:hover {
+  background-color: #F1C52E;
+}
+
+.popular-1:active {
+  background-image: url(../img/popular-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+background-color: rgba(255, 0, 0, 0.5);
+}
+
+.popular-1 {
+  background-image: url(../img/popular-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popular-bg-2 {
+  background-image: url(../img/popular-2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popular-bg-3 {
+  background-image: url(../img/popular-3.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popular-bg-4 {
+  background-image: url(../img/popular-4.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popular-bg-5 {
+  background-image: url(../img/popular-5.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popular-bg-6 {
+  background-image: url(../img/popular-6.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service {
+  background-color: #e5e5e5;
+}
+
+div.service-image-1 {
+background-image: url(../img/delivery.svg);
+background-repeat: no-repeat;
+width: 136px;
+height: 164px;
+}
+
+div.service-image-2 {
+background-image: url(../img/warranty.svg);
+background-repeat: no-repeat;
+width: 171px;
+height: 195px;
+}
+
+div.service-image-3 {
+background-image: url(../img/credit.svg);
+background-repeat: no-repeat;
+width: 156px;
+height: 188px;
+}
+
+.main-footer {
+  background-color: #464646;
+  color: #fff;
+}
+
+.login-footer-bg {
+  background-image: url(../img/user.svg);
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.compare-footer-bg {
+  background-image: url(../img/compare.svg);
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.cart-footer-bg {
+  background-image: url(../img/cart.svg);
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+a.login-link-footer,
+a.compare-footer,
+a.cart-footer {
+ padding-left: 20px;
+ margin-left: 5px;
+}
+
+.site-navigation-footer a,
+.social a {
+  color: #fff;
+}
+
+/* Модалки */
+.modal-window {
+  display: none;
+}
+
+.modal-map {
+  display: none;
+}
