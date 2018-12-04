@@ -1,12 +1,12 @@
 body {
- font-family: "Open Sans", "Arial", sans-serif;
- color: black;
+ font-family: "OpenSans", "Arial", sans-serif;
+ color: rgb(0, 0, 0);
  font-size: 15px;
 }
 
 body a {
   text-decoration: none;
-  color: #000;
+  color: rgb(0, 0, 0);
 }
 
 ul {
@@ -14,17 +14,17 @@ ul {
 }
 
 li a {
-  color: rgba(0, 0, 0, 1);
+  color: rgb(0, 0, 0);
 }
 
 .search {
  font-size: 15px;
   font-weight: lighter;
-  font-family: "OpenSans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .main-navigation {
-  background-color: #F8E296;
+  background-color: rgb(248, 226, 150);
 }
 
 .login-icon-link {
@@ -32,17 +32,22 @@ li a {
   background-repeat: no-repeat;
 }
 
-.login-icon-link:hover {
+.profile-header {
+  color: rgb(0, 0, 0)
+}
+
+.login-icon-link:hover,
+.login-link-off:hover,
+.compare:hover,
+.cart:hover {
   opacity: 0.6;
 }
 
-.login-icon-link:active {
+.login-icon-link:active,
+.login-link-off:active,
+.compare:active,
+.cart:active {
   opacity: 0.3;
-}
-
-.login-link {
-  padding-left: 20px;
-
 }
 
 .compare-icon {
@@ -50,33 +55,9 @@ li a {
   background-repeat: no-repeat;
 }
 
-.compare {
-  padding-left: 20px;
-}
-
-.compare-icon:hover {
-  opacity: 0.6;
-}
-
-.compare-icon:active {
-  opacity: 0.3;
-}
-
 .cart-icon {
   background: url(../img/cart.svg);
   background-repeat: no-repeat;
-}
-
-.cart {
-  padding-left: 20px;
-}
-
-.cart-icon:hover {
-  opacity: 0.6;
-}
-
-.cart-icon:active {
-  opacity: 0.3;
 }
 
 .login-link, .compare, .cart { /* временно */
@@ -84,7 +65,7 @@ li a {
 }
 
  .site-navigation {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: bolder;
@@ -102,7 +83,7 @@ li a {
 }
 
 .site-navigation .inner-list {
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 36px;
   font-weight: lighter;
@@ -119,7 +100,7 @@ li a {
 }
 
 h3 {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 56px;
   font-weight: bolder;
@@ -127,23 +108,41 @@ h3 {
 }
 
 table th {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 36px;
   line-height: 48px;
   font-weight: normal;
 }
 
-a.button {
-  font-family: "Gilroy", sans-serif;
+.button {
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   letter-spacing: 4px;
   text-transform: uppercase;
+}
+
+.price {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: lighter;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.add-on-compare {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 36px;
+  font-weight: lighter;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 dt {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -151,15 +150,16 @@ dt {
   text-transform: uppercase;
 }
 
-.product-category {
-  font-family: "Gilroy", sans-serif;
+.product-category,
+.catalog-item-h3 {
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
 }
 
 .service {
-  background-color: #e5e5e5;
+  background-color: rgb(229, 229, 229);
 }
 
 div.service-image-1 {
@@ -184,38 +184,42 @@ height: 188px;
 }
 
 .main-footer {
-  background-color: #464646;
-  color: #fff;
+  background-color: rgb(70, 70, 70);
+  color: rgb(255, 255, 255);
 }
 
 .login-footer-bg {
   background-image: url(../img/user.svg);
   background-repeat: no-repeat;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .compare-footer-bg {
   background-image: url(../img/compare.svg);
   background-repeat: no-repeat;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .cart-footer-bg {
   background-image: url(../img/cart.svg);
   background-repeat: no-repeat;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
-a.login-link-footer,
-a.compare-footer,
-a.cart-footer {
+.login-link-footer,
+.compare-footer,
+.cart-footer {
  padding-left: 20px;
  margin-left: 5px;
 }
 
-.site-navigation-footer a,
-.social a {
-  color: #fff;
+.site-navigation-footer .site-navigation-footer-items,
+.social .social-button,
+.profile,
+.login-link-footer,
+.compare-footer,
+.cart-footer {
+  color: rgb(255, 255, 255);
 }
 
 /* Модалки */
