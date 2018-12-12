@@ -13,14 +13,52 @@ ul {
   list-style: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ margin: -1px;
+ border: 0;
+ padding: 0;
+ white-space: nowrap;
+ clip-path: inset(100%);
+ clip: rect(0 0 0 0);
+ overflow: hidden;
+}
+
+
 .search {
+  width: 50%;
  font-size: 15px;
   font-weight: lighter;
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
+
 .main-navigation {
   background-color: rgb(248, 226, 150);
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:center;
+  width: 1160px;
+  margin: 40px auto 0 auto;
+}
+
+.middle-nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+.main-header-logo {
+      display: block;
+      margin-top: -20px;
+      margin-left: 60px;
 }
 
 .login-icon-link {
@@ -56,11 +94,21 @@ ul {
   background-repeat: no-repeat;
 }
 
-.login-link, .compare, .cart { /* временно */
-  margin-left: 40px;
+.login-link { /* временно */
+margin-right: 250px;
+}
+
+.cart {
+  margin-right: 50px;
+}
+
+.compare {
+  margin-right: 70px;
 }
 
  .site-navigation {
+  display: flex;
+  justify-content: space-between;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -68,6 +116,31 @@ ul {
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   letter-spacing: 5px;
+  margin-right: 40px;
+}
+
+.slide.slide-active {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 40px auto 0 auto;
+}
+
+.slide-active-info {
+  width: 50%;
+}
+
+.slide{
+display: none;
+}
+
+.device-catalog {
+
+}
+
+.li-1 {
+  width: 450px;
+  margin-left:20px;
 }
 
 .device-catalog:hover {
@@ -79,6 +152,7 @@ ul {
 }
 
 .site-navigation .inner-list {
+  display: none;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 36px;
@@ -146,6 +220,14 @@ dt {
   text-transform: uppercase;
 }
 
+.product-category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+
 .product-category,
 .catalog-item-h3 {
   font-family: "Gilroy", "Arial", sans-serif;
@@ -155,7 +237,22 @@ dt {
 }
 
 .service {
+  outline: 1px solid  red;
+  display: flex;
+  justify-content: space-between;
   background-color: rgb(229, 229, 229);
+}
+
+.service-list-left {
+  outline: 1px solid  green;
+}
+
+.list.list-active {
+display: block;
+}
+
+.list {
+display: none;
 }
 
 div.service-image-1 {
@@ -179,9 +276,90 @@ width: 156px;
 height: 188px;
 }
 
+.company-brand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.brend-hover {
+  display: none;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.info-about-us {
+width: 50%;
+}
+
+.info-contacts {
+  width: 50%;
+}
+
 .main-footer {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(70, 70, 70);
   color: rgb(255, 255, 255);
+}
+
+.top-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 65px;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-bottom: 40px;
+}
+
+.top-footer .main-logo-footer {
+  margin-right: 50%;
+}
+
+.middle-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-bottom: 40px;
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.list-inline-footer {
+  display: flex;
+  width:  400px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.yellow-line {
+  background-color: #FDC900;
+  width: 80px;
+  height: 7px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .login-footer-bg {
@@ -225,4 +403,11 @@ height: 188px;
 
 .modal-map {
   display: none;
+}
+
+.monopods-h1 {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 700;
 }

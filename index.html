@@ -10,18 +10,20 @@
 
     <header class="main-header"><!--Шапка сайта начало-->
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo.svg" width="163" height="35" alt="Логотип девайс">
-        </a>
-        <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <label class="visually-hidden" for="search-on-site">Поиск</label>
-           <input class="search-text" type="search" name="search" placeholder="Поиск по сайту" id="search-on-site">
-        </form>
-        <a class="login-link login-icon-link" href="login.html">Войти</a>
-        <a class="compare compare-icon" href="compare.html">Сравнить</a>
-        <a class="cart cart-icon" href="cart.html">Корзина</a>
+          <a class="main-header-logo">
+            <img src="img/logo.svg" width="163" height="35" alt="Логотип девайс">
+          </a>
+        <div class="middle-nav-wrapper">
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search-on-site">Поиск</label>
+             <input class="search-text" type="search" name="search" placeholder="Поиск по сайту" id="search-on-site">
+          </form>
+          <a class="login-link login-icon-link" href="login.html">Войти</a>
+          <a class="compare compare-icon" href="compare.html">Сравнить</a>
+          <a class="cart cart-icon" href="cart.html">Корзина</a>
+        </div>
         <ul class="site-navigation">
-          <li><a class="device-catalog" href="device-catalog.html">Каталог товаров</a>
+          <li class="li-1"><a class="device-catalog" href="device-catalog.html">Каталог товаров</a>
             <ul class="inner-list">
               <li><a class="inner-list-items" href="#">Виртуальная реальность</a></li>
               <li><a class="inner-list-items" href="#">Моноподы для селфи</a></li>
@@ -42,9 +44,10 @@
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
 
       <section class="main-slider"><!--Секция слайдера начало-->
-        <div class="slider-one">
+        <div class="slide slide-active">
           <h2 class="visually-hidden">Слайдер товаров</h2>
           <img src="img/slider-1.png" width="384" height="486" alt="Стойка для селфи">
+          <div class="slide-active-info">
           <img src="img/number-01.png" width="10" height="20" alt="Номер слайдера">
           <h3>Делай селфи,<br> как Бен Стиллер!</h3>
           <p>Самая длинная палка для селфи доступна в нашем магазине.
@@ -69,7 +72,8 @@
             </tbody>
           </table>
         </div>
-        <div class="slider-two">
+        </div>
+        <div class="slide">
           <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
           <img src="img/number-02.png" width="10" height="20" alt="Номер слайдера">
           <h3>Худеем<br> правильно!</h3>
@@ -91,7 +95,7 @@
             </tbody>
           </table>
         </div>
-        <div class="slider-three">
+        <div class="slide">
           <img src="img/slider-3.png" width="526" height="334" alt="Квадракоптер">
           <img src="img/number-03.png" width="10" height="20" alt="Номер слайдера">
           <h3>Порхает как бабочка,<br> жалит как пчела!</h3>
@@ -119,27 +123,24 @@
 
       <section class="product-category"><!--Категории товаров начало-->
         <h2 class="visually-hidden">Категории товара</h2>
-        <div class="popular-bg-1"></div>
         <a href="#">Виртуальная реальность</a>
-        <div class="popular-bg-2"></div>
         <a href="#">Моноподы для селфи</a>
-        <div class="popular-bg-3"></div>
         <a href="#">Экшн-камеры</a>
-        <div class="popular-bg-4"></div>
         <a href="#">Фитнес-браслеты</a>
-        <div class="popular-bg-5"></div>
         <a href="#">Умные часы</a>
-        <div class="popular-bg-6"></div>
         <a href="#">Квадрокоптеры</a>
       </section><!--Категории товаров конец-->
 
       <section class="service"><!--Услуги начало-->
-        <h2 class="visually-hidden">Услуги</h2>
-        <dl class="service-list">
-          <dt>Доставка</dt>
-          <dt>Гарантия</dt>
-          <dt>Кредит</dt>
-          <dd>
+        <div>
+          <h2 class="visually-hidden">Услуги</h2>
+          <dl class="list list-active">
+            <dt><a href="#">Доставка</a></dt>
+            <dt><a href="#">Гарантия</a></dt>
+            <dt><a href="#">Кредит</a></dt>
+          </div>
+          <div>
+            <dd>
             <h3 class="header-delivery">Доставка</h3>
             <p class="paragraph-delivery">Мы с удовольствием доставим ваш товар прямо к вашему
                подъезду совершенно бесплатно! Ведь мы неплохо
@@ -147,8 +148,9 @@
                <div class="service-image-1"></div>
           </dd>
         </dl>
+      </div>
         <h2 class="visually-hidden">Гарантия</h2>
-        <dl class="service-list">
+        <dl class="list">
           <dd>
             <h3 class="header-delivery">Гарантия</h3>
             <p class="paragraph-delivery">Если из-за возгорания купленного у нас товара у вас сгорит
@@ -158,7 +160,7 @@
           </dd>
         </dl>
         <h2 class="visually-hidden">Кредит</h2>
-        <dl class="service-list">
+        <dl class="list">
           <dd>
             <h3 class="header-delivery">Кредит</h3>
             <p class="paragraph-delivery">Залезть в долговую яму стало проще! Кредитные
@@ -175,10 +177,10 @@
         <a href="#"><img src="img/logotype-brend-2.jpg" width="260" height="100" alt="Логотип бренда"></a>
         <a href="#"><img src="img/logotype-brend-3.jpg" width="260" height="100" alt="Логотип бренда"></a>
         <a href="#"><img src="img/logotype-brend-4.jpg" width="260" height="100" alt="Логотип бренда"></a>
-        <a href="#"><img src="img/logotype-brend-color-1.jpg" width="260" height="100" alt="Логотип бренда"></a>
-        <a href="#"><img src="img/logotype-brend-color-2.jpg" width="260" height="100" alt="Логотип бренда"></a>
-        <a href="#"><img src="img/logotype-brend-color-3.jpg" width="260" height="100" alt="Логотип бренда"></a>
-        <a href="#"><img src="img/logotype-brend-color-4.jpg" width="260" height="100" alt="Логотип бренда"></a>
+        <a class="brend-hover" href="#"><img src="img/logotype-brend-color-1.jpg" width="260" height="100" alt="Логотип бренда"></a>
+        <a class="brend-hover" href="#"><img src="img/logotype-brend-color-2.jpg" width="260" height="100" alt="Логотип бренда"></a>
+        <a class="brend-hover" href="#"><img src="img/logotype-brend-color-3.jpg" width="260" height="100" alt="Логотип бренда"></a>
+        <a class="brend-hover" href="#"><img src="img/logotype-brend-color-4.jpg" width="260" height="100" alt="Логотип бренда"></a>
       </section><!--Бренды конец-->
 
       <section class="info"><!--Информация начало-->
@@ -204,23 +206,36 @@
     </main><!--Основной контент конец-->
 
     <footer class="main-footer"><!--Подвал сайта начало-->
-      <img src="img/logo-yellow.svg" width="162" height="35" alt="Логотип девайс">
+      <div class="top-footer">
+      <img class="main-logo-footer" src="img/logo-yellow.svg" width="162" height="35" alt="Логотип девайс">
       <a class="login-footer-bg login-link-footer" href="login.html">Войти</a>
       <a class="compare-footer-bg compare-footer" href="compare.html">Сравнить</a>
       <a class="cart-footer-bg cart-footer" href="cart.html">Корзина</a>
+    </div>
+    <div class="middle-footer">
       <p class="address">г. Москва, ул. Строителей, 15</p>
       <ul class="site-navigation-footer">
-        <li><a class="site-navigation-footer-items" href="delivery.html">Доставка</a></li>
-        <li><a class="site-navigation-footer-items" href="warranty.html">Гарантия</a></li>
-        <li><a class="site-navigation-footer-items" href="contacts.html">Контакты</a></li>
+        <div class="list-inline-footer">
+          <li><a class="site-navigation-footer-items" href="delivery.html">Доставка</a></li>
+          <li><a class="site-navigation-footer-items" href="warranty.html">Гарантия</a></li>
+          <li><a class="site-navigation-footer-items" href="contacts.html">Контакты</a></li>
+        </div>
       </ul>
       <p class="phone">Тел.: +7 (495) 495-95-95</p>
-      <ul class="social">
-        <li><a class="social-button facebook" href="https://www.facebook.com">Фейсбук</a></li>
-        <li><a class="social-button instagram" href="https://www.instagram.com">Инстаграм</a></li>
-        <li><a class="social-button twitter" href="https://twitter.com">Твиттер</a></li>
-      </ul>
+    </div>
+    <div class="bottom-footer">
+      <span class="yellow-line"></span>
+
+        <ul class="social">
+          <li><a class="social-button facebook" href="https://www.facebook.com">Фейсбук</a></li>
+          <li><a class="social-button instagram" href="https://www.instagram.com">Инстаграм</a></li>
+          <li><a class="social-button twitter" href="https://twitter.com">Твиттер</a></li>
+        </ul>
+
+    <div>
       <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-html.svg" width="26.943" height="34.09" alt="Логотип htmlacademy"></a>
+    </div>
+  </div>
     </footer><!--Подвал сайта конец-->
 
     <section class="modal modal-window"><!--Модалка отправки начало-->
