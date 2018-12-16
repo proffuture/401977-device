@@ -42,15 +42,17 @@
     </header><!--Шапка сайта конец-->
 
     <main class="container"><!--Основной контент начало-->
+      <div class="monopods-h1-wrapper">
       <h1 class="monopods-h1">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
         <li>Моноподы для селфи</li>
       </ul>
+    </div>
 
       <section class="main-catalog"><!--Секция каталога начало-->
-        <div class="warp-filter"><!--Обертка фильтра начало-->
+        <div class="wrapper-filter"><!--Обертка фильтра начало-->
           <div class="filter"><!--Фильтр начало-->
             <h2 class="filter-h2">Фильтр:</h2>
             <form class="filter-items" action="https://echo.htmlacademy.ru" method="post">
@@ -100,8 +102,10 @@
             </form>
           </div><!--Фильтр конец-->
         </div><!--Обертка фильтра конец-->
-        <div class="warp-sorting"><!--Обертка сортировки начало-->
+        <div class="wrapper-sorting"><!--Обертка сортировки начало-->
           <div class="sorting"><!--Сортировка начало-->
+            <div class="wrapper-bg-sorting">
+            <div class="wrapper-sorting-elements">
             <h2 class="sorting-h2">Сортировка:</h2>
             <ul class="sorting-menu">
               <li class="sorting-menu-current"><input class="visually-hidden sorting-filter sorting-filter-checkbox" type="checkbox" name="on-price" value="" id="on-price" checked>
@@ -117,6 +121,9 @@
               <li class="close-expand">-</li>
               <li class="open-expand">+</li>
             </ul>
+          </div>
+        </div>
+        <div class="catalog-list-wrapper">
             <ul class="catalog-list">
               <li class="catalog-item">
                 <img src="img/item-1.jpg" width="360" height="380" alt="Товар номер 1">
@@ -155,6 +162,8 @@
                 </h3>
               </li>
             </ul>
+          </div>
+          <div class="control-page-wrapper">
             <a href="#" class="control-page control-page-back">Назад</a>
             <ul class="number-list">
               <li class="number-list-current">1</li>
@@ -162,6 +171,7 @@
               <li><a href="three-page.html">3</a></li>
             </ul>
             <a href="#" class="control-page control-page-front">Вперёд</a>
+          </div>
           </div><!--Сортировка конец-->
         </div><!--Обертка сортировки конец-->
       </section><!--Секция каталога конец-->

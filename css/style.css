@@ -34,6 +34,7 @@ input[type="radio"].visually-hidden {
  overflow: hidden;
 }
 
+/*------------Начало стилей шапки-----------*/
 
 .search {
   width: 540px;
@@ -115,6 +116,8 @@ padding-left: 20px;
 .compare {
   margin-right: 70px;
 }
+
+/*----------- Конец стилей шапки-----------*/
 
  .site-navigation {
   display: flex;
@@ -436,13 +439,12 @@ width: 50%;
   color: rgb(255, 255, 255);
 }
 
-/* Модалки */
-.modal-window {
-  display: none;
-}
-
-.modal-map {
-  display: none;
+/*-----------Страница каталог начало---------------*/
+.monopods-h1-wrapper {
+  width: 1040px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 60px;
 }
 
 .monopods-h1 {
@@ -450,4 +452,93 @@ width: 50%;
   font-size: 47px;
   line-height: 48px;
   font-weight: 700;
+}
+
+.breadcrumbs {
+  display: flex;
+  padding: 0;
+}
+
+.main-catalog {
+  display: flex;
+}
+
+.wrapper-filter {
+  display: flex;
+  justify-content: flex-end;
+  width: calc(50% - 230px);
+  min-width: 320px;
+  background-color: rgb(239, 239, 239);
+}
+
+.filter {
+  width: 260px;
+}
+
+.wrapper-sorting {
+  width: calc(50% + 320px);
+}
+
+.wrapper-bg-sorting {
+  background-color: rgb(239, 239, 239);
+}
+
+.wrapper-sorting-elements {
+  display: flex;
+  justify-content: space-between;
+  width: 840px;
+}
+
+.sorting-menu {
+  display: flex;
+  padding: 0;
+}
+
+.expand {
+  display: flex;
+  padding: 0;
+}
+
+.catalog-list-wrapper {
+  width: 840px;
+}
+
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 60px;
+  margin-left: 60px;
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.number-list {
+  display: flex;
+  padding: 0;
+}
+
+.control-page-wrapper {
+  display: flex;
+  width: 840px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  background-color: rgb(239, 239, 239);
+}
+
+/*-----------Страница каталог конец---------------*/
+
+/* ------------Модалки------------ */
+.modal-window {
+  display: none;
+}
+
+.modal-map {
+  display: none;
 }
