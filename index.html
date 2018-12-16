@@ -33,9 +33,10 @@
               <li><a class="inner-list-items" href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
-          <li><a class="device-catalog" href="delivery.html">Доставка</a></li>
-          <li><a class="device-catalog" href="warranty.html">Гарантия</a></li>
-          <li><a class="device-catalog" href="contacts.html">Контакты</a></li>
+            <li><a class="device-catalog" href="delivery.html">Доставка</a></li>
+            <li><a class="device-catalog" href="warranty.html">Гарантия</a></li>
+            <li><a class="device-catalog" href="contacts.html">Контакты</a></li>
+
         </ul>
       </nav>
     </header><!--Шапка сайта конец-->
@@ -48,7 +49,6 @@
           <h2 class="visually-hidden">Слайдер товаров</h2>
           <img src="img/slider-1.png" width="384" height="486" alt="Стойка для селфи">
           <div class="slide-active-info">
-          <img src="img/number-01.png" width="10" height="20" alt="Номер слайдера">
           <h3>Делай селфи,<br> как Бен Стиллер!</h3>
           <p>Самая длинная палка для селфи доступна в нашем магазине.
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -58,16 +58,16 @@
             <caption class="visually-hidden">Таблица характеристик товара</caption>
               <thead>
                 <tr>
-                  <th>8,5 м</th>
-                  <th>5 кг</th>
-                  <th>Карбон</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
                   <td>Длина палки</td>
                   <td>Вес палки</td>
                   <td>Материал</td>
+                  <tr>
+                </thead>
+                <tbody>
+                  <th>8,5 м</th>
+                  <th>5 кг</th>
+                  <th>Карбон</th>
+                  </tr>
                 </tr>
             </tbody>
           </table>
@@ -75,7 +75,6 @@
         </div>
         <div class="slide">
           <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
-          <img src="img/number-02.png" width="10" height="20" alt="Номер слайдера">
           <h3>Худеем<br> правильно!</h3>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
             не пропускать занятия и соблюдать диету.</p>
@@ -97,7 +96,6 @@
         </div>
         <div class="slide">
           <img src="img/slider-3.png" width="526" height="334" alt="Квадракоптер">
-          <img src="img/number-03.png" width="10" height="20" alt="Номер слайдера">
           <h3>Порхает как бабочка,<br> жалит как пчела!</h3>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
              мощным лазером, замаскированным под стандартную камеру.</p>
@@ -132,43 +130,38 @@
       </section><!--Категории товаров конец-->
 
       <section class="service"><!--Услуги начало-->
-        <div>
+        <div class="service-wrapper">
+        <div class="list list-active-left">
           <h2 class="visually-hidden">Услуги</h2>
-          <dl class="list list-active">
-            <dt><a href="#">Доставка</a></dt>
-            <dt><a href="#">Гарантия</a></dt>
-            <dt><a href="#">Кредит</a></dt>
+            <a href="#">Доставка</a>
+            <a href="#">Гарантия</a>
+            <a href="#">Кредит</a>
           </div>
-          <div>
-            <dd>
-            <h3 class="header-delivery">Доставка</h3>
+          <div class="list list-active-right">
+            <h3 class="h3-delivery">Доставка</h3>
             <p class="paragraph-delivery">Мы с удовольствием доставим ваш товар прямо к вашему
                подъезду совершенно бесплатно! Ведь мы неплохо
                заработаем, поднимая его на ваш этаж.</p>
+               </div>
                <div class="service-image-1"></div>
-          </dd>
-        </dl>
-      </div>
+
+               <div class="list">
         <h2 class="visually-hidden">Гарантия</h2>
-        <dl class="list">
-          <dd>
-            <h3 class="header-delivery">Гарантия</h3>
+            <h3 class="h3-delivery">Гарантия</h3>
             <p class="paragraph-delivery">Если из-за возгорания купленного у нас товара у вас сгорит
               дом — не переживайте, мы выдадим вам новый.
               Товар, не дом, конечно же.</p>
               <div class="service-image-2"></div>
-          </dd>
-        </dl>
+        </div>
+        <div class="list">
         <h2 class="visually-hidden">Кредит</h2>
-        <dl class="list">
-          <dd>
-            <h3 class="header-delivery">Кредит</h3>
+            <h3 class="h3-delivery">Кредит</h3>
             <p class="paragraph-delivery">Залезть в долговую яму стало проще! Кредитные
               консультанты подберут для вас наиболее выгодные
               условия кредита. Выгодные для нашего банка, разумеется.</p>
               <div class="service-image-3"></div>
-          </dd>
-        </dl>
+        </div>
+      </div>
       </section><!--Услуги конец-->
 
       <section class="company-brand"><!--Бренды начало-->
@@ -206,6 +199,7 @@
     </main><!--Основной контент конец-->
 
     <footer class="main-footer"><!--Подвал сайта начало-->
+      <div class="footer-wrapper">
       <div class="top-footer">
       <img class="main-logo-footer" src="img/logo-yellow.svg" width="162" height="35" alt="Логотип девайс">
       <a class="login-footer-bg login-link-footer" href="login.html">Войти</a>
@@ -222,7 +216,6 @@
       <p class="phone">Тел.: +7 (495) 495-95-95</p>
     </div>
     <div class="bottom-footer">
-      <span class="yellow-line"></span>
         <ul class="social">
           <li><a class="social-button facebook" href="https://www.facebook.com">Фейсбук</a></li>
           <li><a class="social-button instagram" href="https://www.instagram.com">Инстаграм</a></li>
@@ -232,6 +225,7 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-html.svg" width="26.943" height="34.09" alt="Логотип htmlacademy"></a>
     </div>
   </div>
+</div>
     </footer><!--Подвал сайта конец-->
 
     <section class="modal modal-window"><!--Модалка отправки начало-->
