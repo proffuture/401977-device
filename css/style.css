@@ -1,7 +1,41 @@
 body {
- font-family: "OpenSans", "Arial", sans-serif;
+ font-family: "Open Sans", "Arial", sans-serif;
  color: rgb(0, 0, 0);
  font-size: 15px;
+}
+
+/*-----------Шрифты----------------*/
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroylight.woff2') format('woff2'),
+         url('../fonts/gilroylight.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-light.woff2') format('woff2'),
+         url('../fonts/opensans-light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-regular.woff2') format('woff2'),
+         url('../fonts/opensans-regular.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
 }
 
 /*
@@ -9,6 +43,7 @@ body {
 outline: 1px solid blue;
 }
 */
+
  a {
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -39,7 +74,6 @@ input[type="radio"].visually-hidden {
   width: 540px;
  font-size: 15px;
   font-weight: lighter;
-  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 
@@ -51,20 +85,20 @@ input[type="radio"].visually-hidden {
   justify-content:center;
   width: 1040px;
   margin: 40px auto 0 auto;
-  padding: 60px;
+  padding: 44px 60px;
 }
 
 .middle-nav-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 25px;
   margin-bottom: 30px;
 }
 
 .main-header-logo {
       display: block;
-      margin-top: -80px;
+      margin-top: -60px;
       width: 170px;
 }
 
@@ -123,31 +157,27 @@ padding-left: 20px;
   justify-content: space-between;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 12px;
   font-weight: bolder;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   padding: 0;
 }
 
 .slide{
-display: none;
+  display: none;
 }
 
 .slide-active {
-display: flex;
-justify-content: space-between;
-width: 1160px;
-margin: 0 auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto 0 auto;
 }
 
 .slide-active-info {
   width: 50%;
-}
-
-.device-catalog {
-
 }
 
 .li-1 {
@@ -164,12 +194,15 @@ margin: 0 auto 0 auto;
 
 .site-navigation .inner-list {
   display: none;
-  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 36px;
   font-weight: lighter;
   text-transform: none;
   letter-spacing: normal;
+}
+
+.device-catalog {
+  padding: 0px;
 }
 
 .inner-list .inner-list-items:hover {
@@ -214,7 +247,6 @@ table th {
 }
 
 .add-on-compare {
-  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 36px;
   font-weight: lighter;
@@ -264,27 +296,27 @@ dt {
 
 
 .list {
-display: none;
+  display: none;
 }
 
 .list-active-left {
-display: flex;
-flex-direction: column;
-width: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
 
 .list-active-right {
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .h3-delivery {
-margin-top: -30px
+  margin-top: -30px
 }
 
 .paragraph-delivery {
-width: 400px;
+  width: 400px;
 }
 
 .service-image-1 {
@@ -297,17 +329,17 @@ width: 400px;
 }
 
 div.service-image-2 {
-background-image: url(../img/warranty.svg);
-background-repeat: no-repeat;
-width: 171px;
-height: 195px;
+  background-image: url(../img/warranty.svg);
+  background-repeat: no-repeat;
+  width: 171px;
+  height: 195px;
 }
 
 div.service-image-3 {
-background-image: url(../img/credit.svg);
-background-repeat: no-repeat;
-width: 156px;
-height: 188px;
+  background-image: url(../img/credit.svg);
+  background-repeat: no-repeat;
+  width: 156px;
+  height: 188px;
 }
 
 .company-brand {
@@ -334,7 +366,7 @@ height: 188px;
 }
 
 .info-about-us {
-width: 50%;
+  width: 50%;
 }
 
 .info-contacts {
@@ -441,7 +473,9 @@ width: 50%;
 /*-----------Страница каталог начало---------------*/
 .monopods-h1-wrapper {
   width: 1040px;
+  margin-top: 22px;
   margin-right: auto;
+  margin-bottom: 50px;
   margin-left: auto;
   padding: 0 60px;
 }
@@ -458,20 +492,56 @@ width: 50%;
   padding: 0;
 }
 
+.breadcrumbs li {
+  padding: 0;
+  margin-right: 50px;
+
+}
+
 .main-catalog {
   display: flex;
 }
 
 .wrapper-filter {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-start;
   width: calc(50% - 230px);
   min-width: 320px;
   background-color: rgb(239, 239, 239);
 }
 
 .filter {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filter-items {
+width: 260px;
+}
+
+.filter-color {
+  padding: 0;
+}
+
+.wrapper-filter-h2 {
+  background-color: rgb(220, 220, 220);
+  display: flex;
+}
+
+.filter-h2 {
+  margin: 0 0 0 auto;
   width: 260px;
+  padding: 19px 0;
+}
+
+.legend {
+
+}
+
+.filter-items fieldset {
+  padding: 0;
+  border: 0;
 }
 
 .wrapper-sorting {
@@ -485,7 +555,12 @@ width: 50%;
 .wrapper-sorting-elements {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 840px;
+}
+
+.sorting-h2 {
+  margin-left: 60px;
 }
 
 .sorting-menu {
@@ -493,9 +568,39 @@ width: 50%;
   padding: 0;
 }
 
+.sorting-menu li {
+  margin-right: 40px;
+}
+
+.sorting-menu li:last-child {
+  margin-right: 0;
+}
+
 .expand {
   display: flex;
   padding: 0;
+  height: 30px;
+}
+
+.close-expand {
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: rgb(194, 194, 194);
+  border-left-width: 6px;
+  border-right-width: 6px;
+  align-self: flex-start;
+  margin-right: 20px;
+}
+
+.open-expand {
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: black;
+  border-left-width: 6px;
+  border-right-width: 6px;
+  align-self: flex-end;
 }
 
 .catalog-list-wrapper {
@@ -519,16 +624,33 @@ width: 50%;
 
 .number-list {
   display: flex;
-  padding: 20px;
+  padding: 0;
+}
+
+.number-list li {
+  margin-right: 30px;
+}
+
+.number-list li:last-child {
+  margin-right: 0;
 }
 
 .control-page-wrapper {
   display: flex;
-  width: 840px;
+  width: 780px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 60px;
+  margin-left: 60px;
   background-color: rgb(239, 239, 239);
+}
+
+.control-page-back {
+  margin-left: 30px;
+}
+
+.control-page-front {
+  margin-right: 30px;
 }
 
 .buttons-item {
