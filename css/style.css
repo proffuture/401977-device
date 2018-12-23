@@ -38,11 +38,10 @@ body {
     font-style: normal;
 }
 
-/*
+
 * {
 outline: 1px solid blue;
 }
-*/
 
  a {
   text-decoration: none;
@@ -407,7 +406,7 @@ h3 {
   color: rgb(0, 0, 0);
 }
 
-table th {
+.table th {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 36px;
   line-height: 48px;
@@ -427,10 +426,10 @@ table th {
 
 .button::before {
   content: "";
+  display: block;
   width: 100%;
   height: 7px;
   background-color: rgb(241, 197, 46);
-  display: block;
   position: absolute;
   margin-top: 9px;
   z-index: -1;
@@ -562,9 +561,9 @@ margin-top: -16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 70px;
+  margin-top: 95px;
   margin-right: auto;
-  margin-bottom: 0;
+  margin-bottom: 90px;
   margin-left: auto;
   width: 1160px;
 }
