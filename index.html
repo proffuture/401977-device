@@ -17,6 +17,7 @@
           <form class="search" action="https://echo.htmlacademy.ru" method="get">
             <label class="visually-hidden" for="search-on-site">Поиск</label>
              <input class="search-text" type="search" name="search" placeholder="Поиск по сайту" id="search-on-site">
+             <button class="button-search" type="button" value="">Найти</button>
           </form>
           <div class="align">
           <a class="login-link login-icon-link" href="login.html">Войти</a>
@@ -25,14 +26,14 @@
         </div>
         </div>
         <ul class="site-navigation">
-          <li class="li-1"><a class="device-catalog device-catalog-bg" href="device-catalog.html">Каталог товаров</a>
+          <li class="sub-menu"><a class="device-catalog device-catalog-bg" href="device-catalog.html">Каталог товаров</a>
             <ul class="inner-list">
               <li><a class="inner-list-items" href="#">Виртуальная реальность</a></li>
               <li><a class="inner-list-items" href="#">Моноподы для селфи</a></li>
-              <li><a class="inner-list-items" href="#">Экшн-камеры</a></li>
+              <li><a class="inner-list-items" href="#">Квадрокоптеры</a></li>
               <li><a class="inner-list-items" href="#">Фитнес-браслеты</a></li>
               <li><a class="inner-list-items" href="#">Умные часы</a></li>
-              <li><a class="inner-list-items" href="#">Квадрокоптеры</a></li>
+              <li><a class="inner-list-items" href="#">Экшн-камеры</a></li>
             </ul>
           </li>
             <li><a class="device-catalog device-catalog-delivery" href="delivery.html">Доставка</a></li>
@@ -47,8 +48,8 @@
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
 
       <section class="main-slider"><!--Секция слайдера начало-->
+        <h2 class="visually-hidden">Слайдер товаров</h2>
         <div class="slide slide-active">
-          <h2 class="visually-hidden">Слайдер товаров</h2>
           <img src="img/slider-1.png" width="384" height="486" alt="Стойка для селфи">
           <div class="slide-active-info">
           <h3>Делай селфи,<br> как Бен Стиллер!</h3>
@@ -56,7 +57,7 @@
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <div class="switch-slide">
             <a class="button button-switch" href="#">Подробнее</a>
-            <input type="radio" name="radio" checked>
+            <!--<input type="radio" name="radio" checked>-->
           </div>
           <table class="table">
             <caption class="visually-hidden">Таблица характеристик товара</caption>
@@ -73,7 +74,7 @@
           </table>
         </div>
         </div>
-        <div class="slide slide-two">
+        <div class="slide">
           <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
           <div class="slide-active-info">
           <h3>Худеем<br> правильно!</h3>
@@ -81,7 +82,7 @@
             не пропускать занятия и соблюдать диету.</p>
             <div class="switch-slide">
           <a class="button" href="#">Подробнее</a>
-            <input type="radio" name="radio">
+            <!--<input type="radio" name="radio">-->
           </div>
           <table class="table">
           <caption class="visually-hidden">Таблица характеристик товара</caption>
@@ -94,7 +95,7 @@
           </table>
         </div>
         </div>
-        <div class="slide slide-three">
+        <div class="slide">
           <img src="img/slider-3.png" width="526" height="334" alt="Квадракоптер">
           <div class="slide-active-info">
           <h3>Порхает как бабочка,<br> жалит как пчела!</h3>
@@ -102,7 +103,7 @@
              мощным лазером, замаскированным под стандартную камеру.</p>
              <div class="switch-slide">
           <a class="button" href="#">Подробнее</a>
-            <input type="radio" name="radio">
+            <!--<input type="radio" name="radio">-->
           </div>
           <table class="table">
           <caption class="visually-hidden">Таблица характеристик товара</caption>
@@ -121,39 +122,21 @@
 
       <section class="product-category"><!--Категории товаров начало-->
         <h2 class="visually-hidden">Категории товара</h2>
-        <div class="square">
-          <div class="popular-square popular-square-1"></div>
-            <a href="#">Виртуальная реальность</a>
-        </div>
-        <div class="square">
-          <div class="popular-square popular-square-2"></div>
-            <a href="#">Моноподы для селфи</a>
-        </div>
-        <div class="square">
-          <div class="popular-square popular-square-3"></div>
-            <a href="#">Экшн-камеры</a>
-        </div>
-        <div class="square">
-          <div class="popular-square popular-square-4"></div>
-            <a href="#">Фитнес-браслеты</a>
-        </div>
-        <div class="square">
-          <div class="popular-square popular-square-5"></div>
-            <a href="#">Умные часы</a>
-        </div>
-        <div class="square">
-          <div class="popular-square popular-square-6"></div>
-            <a href="#">Квадрокоптеры</a>
-        </div>
+        <a class="square square-1" href="#">Виртуальная реальность</a>
+        <a class="square square-2" href="#">Моноподы для селфи</a>
+        <a class="square square-3" href="#">Экшн-камеры</a>
+        <a class="square square-4" href="#">Фитнес-браслеты</a>
+        <a class="square square-5" href="#">Умные часы</a>
+        <a class="square square-6" href="#">Квадрокоптеры</a>
       </section><!--Категории товаров конец-->
 
       <section class="service"><!--Услуги начало-->
         <div class="service-wrapper">
         <div class="list list-active-left">
           <h2 class="visually-hidden">Услуги</h2>
-            <a class="button buttons" href="#">Доставка</a>
-            <a class="button buttons" href="#">Гарантия</a>
-            <a class="button buttons" href="#">Кредит</a>
+            <a class="button active" href="#">Доставка</a>
+            <a class="button" href="#">Гарантия</a>
+            <a class="button" href="#">Кредит</a>
           </div>
           <div class="list list-right list-active-right-1">
             <h3 class="h3-delivery">Доставка</h3>
@@ -199,14 +182,14 @@
       <section class="info"><!--Информация начало-->
         <div class="info-about-us">
           <h3 class="about-us-h3">О нас</h3>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="p-margin">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
           <ul class="transport-company">
             <li>Деловые Линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button" href="#">Подробнее о нас</a>
+          <a class="button button-about-us" href="#">Подробнее о нас</a>
         </div>
         <div class="info-contacts">
           <h3 class="info-contacts-h3">Контакты</h3>

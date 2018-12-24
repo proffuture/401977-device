@@ -38,11 +38,11 @@ body {
     font-style: normal;
 }
 
-
+/*
 * {
 outline: 1px solid blue;
 }
-
+*/
  a {
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -70,9 +70,27 @@ input[type="radio"].visually-hidden {
 /*------------Начало стилей шапки-----------*/
 
 .search {
-  width:540px;
+  width:500px;
   font-size: 15px;
   font-weight: lighter;
+}
+
+.search::after {
+  content: "";
+  display: block;
+  background-color: black;
+  width: 361px;
+  height: 2px;
+}
+
+
+.search-text {
+background: none;
+border: none;
+background-image: url(../img/search.svg);
+background-repeat: no-repeat;
+background-position: left;
+padding: 5px 60px 5px 30px;
 }
 
 
@@ -86,6 +104,8 @@ input[type="radio"].visually-hidden {
   margin: 40px auto 0 auto;
   padding: 44px 60px 150px 60px;
 }
+
+
 
 .main-navigation-catalog {
   background-color: rgb(248, 226, 150);
@@ -197,6 +217,7 @@ input[type="radio"].visually-hidden {
 
 /*----------- Конец стилей шапки-----------*/
 
+/*-------------Категории товаров начало------*/
  .site-navigation {
     display: flex;
     justify-content: space-between;
@@ -212,7 +233,6 @@ input[type="radio"].visually-hidden {
 
 .product-category {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 105px;
   margin-right: auto;
@@ -234,54 +254,56 @@ input[type="radio"].visually-hidden {
   width: 160px;
 }
 
-.popular-square {
+
+.square::before {
+  content: "";
+  display: block;
+  background: rgb(250, 225, 148);
   width: 160px;
   height: 160px;
-  margin-bottom: 35px;
-  background-color: rgb(248, 226, 150);
 }
 
-.popular-square-1 {
-  background-color: rgb(248, 226, 150);
+.square:hover::before {
+  background: rgb(241, 197, 46);
+}
+
+.square-1::before {
+  background-image: url(../img/popular-1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.square-2::before {
+  background-image: url(../img/popular-2.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.square-3::before {
+  background-image: url(../img/popular-3.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.square-4::before {
+  background-image: url(../img/popular-4.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.square-5::before {
+  background-image: url(../img/popular-5.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.square-6::before {
+  background-image: url(../img/popular-6.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.square-1:hover::before {
   background-image: url(../img/popular-1.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.popular-square-2 {
-  background-color: rgb(248, 226, 150);
-  background-image: url(../img/popular-2.svg);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-}
-
-.popular-square-3 {
-  background-color: rgb(248, 226, 150);
-  background-image: url(../img/popular-3.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.popular-square-4 {
-  background-color: rgb(248, 226, 150);
-  background-image: url(../img/popular-4.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.popular-square-5 {
-  background-color: rgb(248, 226, 150);
-  background-image: url(../img/popular-5.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.popular-square-6 {
-  background-color: rgb(248, 226, 150);
-  background-image: url(../img/popular-6.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-}
 
 .main-slider {
   display: flex;
@@ -291,8 +313,24 @@ input[type="radio"].visually-hidden {
   margin: 0 auto 0 auto;
 }
 
-.main-slider .slide-two,
-.main-slider .slide-three {
+.slide::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 7px;
+  background-color: white;
+  top: -70px;
+  right: 460px;
+}
+
+
+.slide {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto 0 auto;
   display: none;
 }
 
@@ -302,28 +340,13 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-active {
-  display: flex;
-  justify-content: space-between;
-  width: 1160px;
-  margin: 0 auto 0 auto;
+display: flex;
 }
 
-.slide-two {
-  display: flex;
-  justify-content: space-between;
-  width: 1160px;
-
-}
-
-.slide-three {
-  display: flex;
-  justify-content: space-between;
-  width: 1160px;
-
-}
 
 .slide-active-info {
   width: 50%;
+
 }
 
 .slide-active-info h3 {
@@ -349,13 +372,49 @@ input[type="radio"].visually-hidden {
 }
 
 .table {
-  margin-left: 20px;
   margin-top: 30px;
+  border-spacing: 60px 11px;
 }
 
-.li-1 {
+
+.sub-menu {
   width: 493px;
+  position: relative;
 }
+
+.sub-menu:hover .inner-list {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+}
+
+.inner-list {
+  background-color: rgb(248, 226, 150);
+  width: 830px;
+  padding-bottom: 40px;
+  padding-left: 0;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.inner-list li {
+  width: 28%;
+  padding-right: 20px;
+}
+
+.inner-list li:last-child {
+  width: 100%;
+}
+
+.button-search {
+  padding: 10px 20px;
+  background: none;
+  border-bottom: none;
+  border-top-color: black;
+  border-left-color: black;
+  border-right-color: black;
+}
+
 
 .device-catalog:hover {
   color: rgba(0, 0, 0, 0.6);
@@ -422,6 +481,10 @@ h3 {
   font-weight: 700;
   letter-spacing: 4px;
   text-transform: uppercase;
+  background-color: rgb(241, 197, 46);
+  border: none;
+  padding: 0 40px;
+  background-color: transparent;
 }
 
 .button::before {
@@ -432,6 +495,7 @@ h3 {
   background-color: rgb(241, 197, 46);
   position: absolute;
   margin-top: 9px;
+  margin-left: -40px;
   z-index: -1;
   transition: .5s;
 }
@@ -515,7 +579,35 @@ dt {
   display: flex;
   flex-direction: column;
   width: 300px;
+  position: relative;
 }
+
+.list-active-left::after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 290px;
+  background-color: black;
+  position: absolute;
+  left: 260px;
+  bottom: 50px;
+}
+
+.list-active-left .button {
+  margin-bottom: 50px;
+  margin-top: -10px
+}
+
+.button.active {
+  background-color: black;
+  color: rgb(241, 197, 46);
+}
+
+.button.active::before {
+  display: none;
+}
+
+
 
 .list-active-right-1 {
   display: flex;
@@ -577,15 +669,76 @@ margin-top: -16px;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1160px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 70px auto;
 }
 
 .info-about-us {
-  width: 50%;
+  width: 40%;
 }
+
+.about-us-h3::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 7px;
+  margin-bottom: 50px;
+  background-color: black;
+}
+
+.info-contacts-h3::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 7px;
+  margin-bottom: 50px;
+  background-color: black;
+}
+
+.info-about-us .p-margin {
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.info-about-us p {
+  line-height: 28px;
+  margin-bottom: 50px;
+}
+
+.transport-company li {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.transport-company li::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border: 2px solid grey;
+  border-radius: 50%;
+  margin-right: 25px;
+  opacity: 0.3;
+}
+
+.transport-company li:last-child {
+  margin-bottom: 50px;
+}
+
+
 
 .info-contacts {
   width: 50%;
+}
+
+.info-contacts p {
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.info-contacts img {
+  margin-bottom: 60px;
 }
 
 .footer-wrapper {
