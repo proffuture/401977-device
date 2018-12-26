@@ -13,19 +13,19 @@
         <a href="index.html" class="main-header-logo">
           <img src="img/logo.svg" width="163" height="35" alt="Логотип девайс">
         </a>
-      <div class="middle-nav-wrapper">
-        <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <label class="visually-hidden" for="search-on-site">Поиск</label>
-           <input class="search-text" type="search" name="search" placeholder="Поиск по сайту" id="search-on-site">
-           <button class="button-search" type="button" value="">Найти</button>
-        </form>
-        <div class="align">
-        <a class="profile-header profile-header-icon" href="user-profile.html" title="Валентин Петухов">Валентин Петухов</a>
-        <a class="login-link-2 login-link-off" href="#">Выйти</a>
-        <a class="compare-2 compare-icon" href="compare.html">Сравнить</a>
-        <a class="cart-2 cart-icon" href="cart.html">Корзина</a>
-      </div>
-      </div>
+        <div class="middle-nav-wrapper">
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search-on-site">Поиск</label>
+            <input class="search-text" type="search" name="search" placeholder="Поиск по сайту" id="search-on-site">
+            <button class="button-search" type="button" value="">Найти</button>
+          </form>
+          <div class="align">
+            <a class="profile-header profile-header-icon" href="user-profile.html" title="Валентин Петухов">Валентин Петухов</a>
+            <a class="login-link-2 login-link-off" href="#">Выйти</a>
+            <a class="compare-2 compare-icon" href="compare.html">Сравнить</a>
+            <a class="cart-2 cart-icon" href="cart.html">Корзина</a>
+          </div>
+        </div>
         <ul class="site-navigation">
           <li class="sub-menu"><a class="device-catalog device-catalog-bg" href="device-catalog.html">Каталог товаров</a>
             <ul class="inner-list">
@@ -113,18 +113,13 @@
             <div class="wrapper-sorting-elements">
             <h2 class="sorting-h2">Сортировка:</h2>
             <ul class="sorting-menu">
-              <li class="sorting-menu-current"><input class="visually-hidden sorting-filter sorting-filter-checkbox" type="checkbox" name="on-price" value="" id="on-price" checked>
-              <label for="on-price">По цене</label>
-            </li>
-            <li><input class="visually-hidden sorting-filter sorting-filter-checkbox" type="checkbox" name="on-type" value="" id="on-type">
-            <label for="on-type">По типу</label>
-          </li>
-              <li><input class="visually-hidden sorting-filter sorting-filter-checkbox" type="checkbox" name="on popularity" value="" id="on popularity">
-              <label for="on popularity">По популярности</label></li>
+              <li class="sorting-menu-current"><a>По цене</a></li>
+            <li><a href="#">По типу</a></li>
+              <li><a href="#">По популярности</a></li>
             </ul>
             <ul class="expand">
-              <li class="close-expand"></li>
-              <li class="open-expand"></li>
+              <li><a class="close-expand" href="#"></a></li>
+              <li><a class="open-expand" href="#"></a></li>
             </ul>
           </div>
         </div>
@@ -214,30 +209,33 @@
 
     <footer class="main-footer"><!--Подвал сайта начало-->
       <div class="footer-wrapper">
-      <div class="top-footer">
-      <a href="index.html"><img src="img/logo-yellow.svg" width="162" height="35" alt="Логотип девайс"></a>
-      <a class="profile login-icon-link" href="user-profile.html" title="Валентин Петухов">Валентин Петухов</a>
-      <a class="login-link-footer" href="#">Выйти</a>
-      <a class="compare-footer compare-icon" href="compare.html">Сравнить</a>
-      <a class="cart-footer cart-icon" href="cart.html">Корзина</a>
+        <div class="top-footer">
+          <a href="index.html"><img src="img/logo-yellow.svg" width="162" height="35" alt="Логотип девайс"></a>
+          <div class="top-footer-right-menu">
+            <a class="profile login-icon-link" href="user-profile.html" title="Валентин Петухов">Валентин Петухов</a>
+            <a class="login-link-footer" href="#">Выйти</a>
+            <a class="compare-footer compare-icon" href="compare.html">Сравнить</a>
+            <a class="cart-footer cart-icon" href="cart.html">Корзина</a>
+          </div>
+        </div>
+        <div class="middle-footer">
+          <p class="address">г. Москва, ул. Строителей, 15</p>
+          <ul class="list-inline-footer">
+            <li><a class="site-navigation-footer-items" href="#">Доставка</a></li>
+            <li><a class="site-navigation-footer-items" href="#">Гарантия</a></li>
+            <li><a class="site-navigation-footer-items" href="#">Контакты</a></li>
+          </ul>
+          <p class="phone">Тел.: +7 (495) 495-95-95</p>
+        </div>
+        <div class="bottom-footer">
+          <ul class="social">
+            <li><a class="social-button facebook" href="https://www.facebook.com"></a></li>
+            <li><a class="social-button instagram" href="https://www.instagram.com"></a></li>
+            <li><a class="social-button twitter" href="https://twitter.com"></a></li>
+          </ul>
+          <div>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-html.svg" width="27" height="34" alt="Логотип htmlacademy"></a>
+          </div>
+        </div>
       </div>
-      <div class="middle-footer">
-      <p class="address">г. Москва, ул. Строителей, 15</p>
-      <ul class="list-inline-footer">
-        <li><a class="site-navigation-footer-items" href="#">Доставка</a></li>
-        <li><a class="site-navigation-footer-items" href="#">Гарантия</a></li>
-        <li><a class="site-navigation-footer-items" href="#">Контакты</a></li>
-      </ul>
-      <p class="phone">Тел.: +7 (495) 495-95-95</p>
-      </div>
-      <div class="bottom-footer">
-      <ul class="social">
-        <li><a class="social-button facebook" href="https://www.facebook.com">Фейсбук</a></li>
-        <li><a class="social-button instagram" href="https://www.instagram.com">Инстаграм</a></li>
-        <li><a class="social-button twitter" href="https://twitter.com">Твиттер</a></li>
-      </ul>
-      <div>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-html.svg" width="27" height="34" alt="Логотип htmlacademy"></a>
-      </div>
-    </div>
     </footer><!--Подвал сайта конец-->
