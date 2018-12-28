@@ -7,11 +7,11 @@ body {
 
 /*------ гобальные начало ------*/
 
-/*
+
 * {
   outline: 1px solid blue;
  }
- */
+
 
  a {
   text-decoration: none;
@@ -473,6 +473,7 @@ h3 {
 
 /*------ Категории товаров начало ------*/
 .square {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 160px;
@@ -491,46 +492,20 @@ h3 {
 }
 
 .square-1::before {
+  position: absolute;
+  content: "";
+  display: flex;
+  width: 97px;
+  height: 55px;
   background-image: url(../img/popular-1.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.square-2::before {
-  background-image: url(../img/popular-2.svg);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-}
-
-.square-3::before {
-  background-image: url(../img/popular-3.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.square-4::before {
-  background-image: url(../img/popular-4.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.square-5::before {
-  background-image: url(../img/popular-5.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.square-6::before {
-  background-image: url(../img/popular-6.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .square-1:hover::before {
-  background-image: url(../img/popular-1.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
+  opacity: 0.6;
 }
+
 
 .product-category {
   display: flex;
@@ -808,7 +783,7 @@ h3 {
 }
 
 .facebook {
-  background-image: url(../img/fb.svg);
+  background-image: url(../img/fb.png);
   background-repeat: no-repeat;
   background-position: center center;
   display: block;
@@ -818,7 +793,7 @@ h3 {
 }
 
 .instagram {
-  background-image: url(../img/fb.svg);
+  background-image: url(../img/insta.png);
   background-repeat: no-repeat;
   background-position: center center;
   display: block;
@@ -828,7 +803,7 @@ h3 {
 }
 
 .twitter {
-  background-image: url(../img/fb.svg);
+  background-image: url(../img/twit.png);
   background-repeat: no-repeat;
   background-position: center center;
   display: block;
