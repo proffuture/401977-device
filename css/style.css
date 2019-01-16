@@ -1014,6 +1014,7 @@ dt {
 
 .breadcrumbs {
   display: flex;
+  position: relative;
   padding: 0;
 }
 
@@ -1021,6 +1022,15 @@ dt {
   padding: 0;
   margin-right: 50px;
   color: rgb(194, 194, 194);
+}
+
+.item-index::after,
+.item-index::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: green;
 }
 
 .breadcrumbs a {
