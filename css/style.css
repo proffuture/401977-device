@@ -1,22 +1,18 @@
 body {
- font-family: "Open Sans", "Arial", sans-serif;
- color: rgb(0, 0, 0);
- font-size: 15px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
 }
 
-
 /*------ гобальные начало ------*/
-
-/*
 * {
-  outline: 1px solid blue;
- }
-*/
+  outline: 1px solid blue 0.5;
+}
 
- a {
+a {
   text-decoration: none;
   color: rgb(0, 0, 0);
- }
+}
 
 ul {
   list-style: none;
@@ -25,16 +21,16 @@ ul {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-   position: absolute;
-   width: 1px;
-   height: 1px;
-   margin: -1px;
-   border: 0;
-   padding: 0;
-   white-space: nowrap;
-   clip-path: inset(100%);
-   clip: rect(0 0 0 0);
-   overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .profile-header {
@@ -44,6 +40,8 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
+  display: inline-block;
+  vertical-align: middle;
   z-index: 1;
   position: relative;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -54,7 +52,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   background-color: rgb(241, 197, 46);
   border: none;
-  padding: 8px 40px;
+  padding: 7px 40px;
   background-color: transparent;
 }
 
@@ -73,7 +71,7 @@ input[type="radio"].visually-hidden {
 
 .button:hover::before {
   height: 100%;
-  margin-top: 0;
+  margin-top: -7px;
 }
 
 .button.active {
@@ -84,54 +82,50 @@ input[type="radio"].visually-hidden {
 .button.active::before {
   display: none;
 }
+
 /*------ гобальные конец ------*/
-
-
-
 /*-----------Шрифты начало----------*/
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
-         url('../fonts/gilroyextrabold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+    url('../fonts/gilroyextrabold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/gilroylight.woff2') format('woff2'),
-         url('../fonts/gilroylight.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroylight.woff2') format('woff2'),
+    url('../fonts/gilroylight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/opensans-light.woff2') format('woff2'),
-         url('../fonts/opensans-light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-light.woff2') format('woff2'),
+    url('../fonts/opensans-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/opensans-regular.woff2') format('woff2'),
-         url('../fonts/opensans-regular.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-regular.woff2') format('woff2'),
+    url('../fonts/opensans-regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
 }
+
 /*-----------Шрифты конец----------*/
-
-
-
 /*------ Шапка сайта начало ------*/
 .main-navigation {
   position: relative;
   background-color: rgb(248, 226, 150);
-  display:flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   width: 1040px;
   margin: 40px auto 0 auto;
   padding: 44px 60px 150px 60px;
@@ -153,7 +147,7 @@ input[type="radio"].visually-hidden {
 
 .search {
   display: flex;
-  width:500px;
+  width: 500px;
   font-size: 15px;
   font-weight: lighter;
 }
@@ -169,12 +163,13 @@ input[type="radio"].visually-hidden {
   width: 300px;
 }
 
-.search-text:focus + .button-search {
+.search-text:focus+.button-search {
   display: inline-block;
 }
 
 .search-text:focus {
   border-bottom: 2px solid black;
+  padding-bottom: 13px;
 }
 
 .button-search {
@@ -213,6 +208,10 @@ input[type="radio"].visually-hidden {
   padding-left: 25px;
 }
 
+.profile-footer.login-icon-link {
+  background-image: url(../img/user-yellow.png);
+}
+
 .compare-icon {
   background-image: url(../img/compare.svg);
   background-repeat: no-repeat;
@@ -225,7 +224,7 @@ input[type="radio"].visually-hidden {
   background-position: left center;
 }
 
- .site-navigation {
+.site-navigation {
   display: flex;
   justify-content: space-between;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -236,150 +235,148 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   letter-spacing: 3px;
   padding: 0;
- }
+}
 
- .sub-menu {
-   width: 493px;
-   position: relative;
- }
+.sub-menu {
+  width: 493px;
+  position: relative;
+}
 
- .sub-menu:hover .inner-list {
-   display: flex;
-   flex-wrap: wrap;
-   position: absolute;
- }
+.sub-menu:hover .inner-list {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+}
 
- .inner-list {
-   background-color: rgb(248, 226, 150);
-   width: 830px;
-   padding-bottom: 40px;
-   padding-left: 0;
-   padding-top: 20px;
-   z-index: 1;
- }
+.inner-list {
+  background-color: rgb(248, 226, 150);
+  width: 1100px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  padding-top: 20px;
+  margin-left: -60px;
+  z-index: 1;
+}
 
- .inner-list li {
-   width: 28%;
-   padding-right: 20px;
- }
+.inner-list li {
+  width: 26%;
+  margin-right: -10px;
+}
 
- .inner-list li:last-child {
-   width: 100%;
- }
+.inner-list li:last-child {
+  width: 100%;
+}
 
- .device-catalog:hover {
-   color: rgba(0, 0, 0, 0.6);
- }
+.device-catalog:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
 
- .device-catalog:active {
-   color: rgba(0, 0, 0, 0.3);
- }
+.device-catalog:active {
+  color: rgba(0, 0, 0, 0.3);
+}
 
- .site-navigation .inner-list {
-   display: none;
-   font-size: 15px;
-   line-height: 36px;
-   font-weight: lighter;
-   text-transform: none;
-   letter-spacing: normal;
- }
+.site-navigation .inner-list {
+  display: none;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: lighter;
+  text-transform: none;
+  letter-spacing: normal;
+}
 
- .device-catalog-bg {
-   padding: 0 20px 0 0;
-   background-image: url(../img/plus.svg);
-   background-repeat: no-repeat;
-   background-position: right;
- }
+.device-catalog-bg {
+  padding: 0 20px 0 0;
+  background-image: url(../img/plus.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
 
- .device-catalog-delivery {
-   margin-left: 15px;
- }
+.device-catalog-delivery {
+  margin-left: 15px;
+}
 
- .device-catalog-warranty {
-   margin-right: 65px;
- }
+.device-catalog-warranty {
+  margin-right: 65px;
+}
 
- .inner-list .inner-list-items:hover {
-   color: rgba(0, 0, 0, 0.6);
- }
+.inner-list .inner-list-items:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
 
- .inner-list .inner-list-items:active {
-   color: rgba(0, 0, 0, 0.3);
- }
+.inner-list .inner-list-items:active {
+  color: rgba(0, 0, 0, 0.3);
+}
 
- .login-link-2 {
-   margin-right: 62px;
- }
+.login-link-2 {
+  margin-right: 62px;
+}
 
- .profile-header {
-   padding-left: 25px;
-   margin-left: 10px;
-   margin-right: 20px;
- }
+.profile-header {
+  padding-left: 25px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
 
- .compare-2 {
-   padding-left: 20px;
-   margin-right: auto;
- }
+.compare-2 {
+  padding-left: 20px;
+  margin-right: auto;
+}
 
- .cart-2 {
-   padding-left: 20px;
- }
+.cart-2 {
+  padding-left: 20px;
+}
 
- .profile-header {
-   color: rgb(0, 0, 0)
- }
+.profile-header {
+  color: rgb(0, 0, 0)
+}
 
- .login-icon-link:hover,
- .profile-header-icon:hover,
- .login-link-off:hover,
- .compare:hover,
- .compare-2:hover,
- .cart:hover,
- .cart-2:hover,
- .device-catalog-bg:hover {
-   opacity: 0.6;
- }
+.login-icon-link:hover,
+.profile-header-icon:hover,
+.login-link-off:hover,
+.compare:hover,
+.compare-2:hover,
+.cart:hover,
+.cart-2:hover,
+.device-catalog-bg:hover {
+  opacity: 0.6;
+}
 
- .login-icon-link:active,
- .profile-header-icon:active,
- .login-link-off:active,
- .compare:active,
- .compare-2:active,
- .cart:active,
- .cart-2:active {
-   opacity: 0.3;
- }
+.login-icon-link:active,
+.profile-header-icon:active,
+.login-link-off:active,
+.compare:active,
+.compare-2:active,
+.cart:active,
+.cart-2:active {
+  opacity: 0.3;
+}
 
- .main-navigation-catalog {
-   background-color: rgb(248, 226, 150);
-   display:flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   justify-content:center;
-   width: 1040px;
-   margin: 40px auto 0 auto;
-   padding: 44px 60px 40px 60px;
- }
+.main-navigation-catalog {
+  background-color: rgb(248, 226, 150);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1040px;
+  margin: 40px auto 0 auto;
+  padding: 44px 60px 40px 60px;
+}
 
- .main-navigation::after {
-   position: absolute;
-   content: "";
-   display: block;
-   width: 100px;
-   height: 7px;
-   background-color: white;
-   top: 225px;
-   right: 460px;
- }
-
+.main-navigation::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 7px;
+  background-color: white;
+  top: 225px;
+  right: 460px;
+}
 
 /*------ Шапка сайта конец ------*/
-
-
-
 /*------ Секция слайдера начало ------*/
 .main-slider {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -451,6 +448,36 @@ input[type="radio"].visually-hidden {
   margin-left: 20px;
 }
 
+.radio-slide-buttons {
+  display: inline-block;
+  position: absolute;
+  bottom: 143px;
+  right: 75px;
+  z-index: 10;
+}
+
+.radio-active-button {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/slider-button.svg);
+  width: 23px;
+  height: 23px;
+  margin-right: 20px;
+}
+
+.radio-button {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/slider-button-empty.svg);
+  width: 23px;
+  height: 23px;
+  margin-right: 20px;
+}
+
+.radio-button:last-child {
+  margin-right: 0;
+}
+
 .table {
   margin-top: 30px;
   border-spacing: 60px 9px;
@@ -474,10 +501,8 @@ h3 {
   line-height: 48px;
   font-weight: normal;
 }
+
 /*------ Секция слайдера конец ------*/
-
-
-
 /*------ Категории товаров начало ------*/
 .product-category {
   display: flex;
@@ -546,7 +571,7 @@ h3 {
   opacity: 0.3;
 }
 
-.p-active:active {
+.square-img:active .p-active {
   opacity: 0.3;
 }
 
@@ -557,10 +582,8 @@ h3 {
   line-height: 24px;
   font-weight: 700;
 }
+
 /*------ Категории товаров конец ------*/
-
-
-
 /*------ Услуги начало ------*/
 .service {
   background-color: rgb(229, 229, 229);
@@ -582,7 +605,7 @@ h3 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding:0 0 100px 0;
+  padding: 0 0 100px 0;
 }
 
 .list-active-left {
@@ -590,6 +613,20 @@ h3 {
   flex-direction: column;
   width: 300px;
   position: relative;
+}
+
+.list .active {
+  background-color: black;
+  margin-right: -55px;
+}
+
+.button-service::before {
+  padding: 0 30px;
+  content: "";
+  display: inline-block;
+  width: 50%;
+  height: 7px;
+  margin-left: -20px;
 }
 
 .list-active-left::after {
@@ -608,7 +645,6 @@ h3 {
   margin-top: -20px;
   padding-left: 19px;
 }
-
 
 .list-active-right-1 {
   display: flex;
@@ -645,10 +681,8 @@ h3 {
   line-height: 28px;
   margin-top: -16px;
 }
+
 /*------ Услуги конец ------*/
-
-
-
 /*------ Бренды начало ------*/
 .company-brand {
   display: flex;
@@ -661,13 +695,19 @@ h3 {
   width: 1160px;
 }
 
-.brend-color {
+.brand-color {
   display: none;
 }
+
+.brand:hover .brand-color {
+  display: flex;
+}
+
+.brand:hover .brand-active {
+  display: none;
+}
+
 /*------ Бренды конец ------*/
-
-
-
 /*------ Информация начало ------*/
 .info {
   display: flex;
@@ -705,7 +745,6 @@ h3 {
   height: 7px;
   margin-bottom: 41px;
   background-color: black;
-
 }
 
 .info-about-us .p-margin {
@@ -757,10 +796,8 @@ h3 {
 .info-contacts img {
   margin-bottom: 74px;
 }
+
 /*------ Информация конец ------*/
-
-
-
 /*------ Подвал сайта начало ------*/
 .footer-wrapper {
   width: 1160px;
@@ -783,9 +820,7 @@ h3 {
   margin-bottom: 15px;
 }
 
-.top-footer .main-logo-footer {
-
-}
+.top-footer .main-logo-footer {}
 
 .top-footer-right-menu {
   display: flex;
@@ -819,7 +854,7 @@ h3 {
 
 .list-inline-footer {
   display: flex;
-  width:  450px;
+  width: 450px;
   justify-content: space-between;
   align-items: center;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -869,7 +904,7 @@ h3 {
 }
 
 .login-icon-link-footer {
-  background-image: url(../img/user.svg);
+  background-image: url(../img/user-yellow.png);
   background-repeat: no-repeat;
   background-position: left center;
   color: rgb(255, 255, 255);
@@ -877,7 +912,7 @@ h3 {
 }
 
 .compare-footer {
-  background-image: url(../img/compare.svg);
+  background-image: url(../img/compare-yellow.png);
   background-repeat: no-repeat;
   color: rgb(255, 255, 255);
   padding-left: 19px;
@@ -885,18 +920,14 @@ h3 {
 }
 
 .cart-footer {
-  background-image: url(../img/cart.svg);
+  background-image: url(../img/cart-yellow.png);
   background-repeat: no-repeat;
   color: rgb(255, 255, 255);
   padding-left: 19px;
   margin-left: 41px;
 }
 
-
-
-.login-link-footer {
-
-}
+.login-link-footer {}
 
 .profile-footer {
   margin-right: 20px;
@@ -910,9 +941,8 @@ h3 {
 .cart-footer {
   color: rgb(255, 255, 255);
 }
+
 /*------ Подвал сайта конец ------*/
-
-
 /*------ Каталог начало ------*/
 .expand {
   display: flex;
@@ -929,7 +959,7 @@ h3 {
   align-self: flex-start;
   margin-right: 20px;
   display: flex;
-      border-top: 0;
+  border-top: 0;
 }
 
 .open-expand {
@@ -991,9 +1021,7 @@ dt {
   margin-top: 31px;
 }
 
-.buttons {
-
-}
+.buttons {}
 
 .monopods-h1-wrapper {
   width: 1040px;
@@ -1020,21 +1048,24 @@ dt {
 
 .breadcrumbs li {
   padding: 0;
-  margin-right: 50px;
+  margin-right: 12px;
   color: rgb(194, 194, 194);
-}
-
-.item-index::after,
-.item-index::before {
-  content: "";
-  display: inline-block;
-  width: 10px;
-  height: 1px;
-  background-color: green;
 }
 
 .breadcrumbs a {
   color: rgb(194, 194, 194);
+}
+
+.breadcrumbs a::after {
+  content: "";
+  display: inline-block;
+  vertical-align: 1px;
+  width: 5px;
+  height: 5px;
+  margin-left: 12px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  transform: rotate(45deg);
 }
 
 .main-catalog {
@@ -1056,7 +1087,10 @@ dt {
 }
 
 .filter-items {
-  width: 260px;
+  width: 200px;
+  margin-top: 70px;
+  margin-right: 60px;
+  border-top: 2px solid black;
 }
 
 .filter-color {
@@ -1070,18 +1104,28 @@ dt {
 }
 
 .filter-h2 {
-  margin: 0 0 0 auto;
+  margin: 5px 0 0 auto;
   width: 260px;
   padding: 19px 0;
+  font-family: "Gilroy", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 3px;
 }
 
 .legend {
-
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .filter-items fieldset {
   padding: 0;
   border: 0;
+  border-bottom: 2px solid black;
 }
 
 .wrapper-sorting {
@@ -1102,15 +1146,37 @@ dt {
 
 .sorting-h2 {
   margin-left: 60px;
+  margin: 5px 0 0 80px;
+  width: 260px;
+  padding: 19px 0;
+  font-family: "Gilroy", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 3px;
 }
 
 .sorting-menu {
   display: flex;
   padding: 0;
+  margin-left: -250px;
 }
 
 .sorting-menu li {
   margin-right: 40px;
+}
+
+.sorting-menu-color {
+  color: rgb(186, 186, 186);
+}
+
+.sorting-menu-color:hover {
+  color: rgb(100, 100, 100);
+}
+
+.sorting-menu-color:active {
+  color: rgb(0, 0, 0);
 }
 
 .sorting-menu li:last-child {
@@ -1194,20 +1260,17 @@ dt {
 .control-page-front {
   padding: 23px;
 }
+
 /*------ Каталог конец ------*/
-
-
-
 /*------ Модалка отправки начало ------*/
 .modal-window {
   display: none;
 }
+
 /*------ Модалка отправки конец ------*/
-
-
-
 /*------ Модалка карты начало ------*/
 .modal-map {
   display: none;
 }
+
 /*------ Модалка карты конец ------*/
